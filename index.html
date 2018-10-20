@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bible trivia game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+    <main class="container">
+        <h1>A historical look at the Bible through trivia questions</h1>
+        
+        <article class="jumbotron">
+            <p id="description" class="lead"></p>
+        </article>
+
+        <h4>Using above description, guess what book of the Bible I'm thinking of?</h4>
+
+        <div class="list-group" id="myList" role="tablist">
+            <a class="list-group-item list-group-item-action" data-toggle="list" role="tab"></a>
+            <a class="list-group-item list-group-item-action" data-toggle="list" role="tab"></a>
+            <a class="list-group-item list-group-item-action" data-toggle="list" role="tab"></a>
+            <a class="list-group-item list-group-item-action" data-toggle="list" role="tab"></a>
+        </div>
+
+        <!-- <div class="alert alert-success" role="alert">
+            <h4 class="alert-heading">Well done!</h4>
+            <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+            <hr>
+            <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+        </div> -->
+    </main>
+    <footer>
+        <div class='container'>
+            <h4 class="countdown">Countdown:&nbsp;</h4><span id="timer"></span>
+            <br />
+            Answered: <div id="guesses"><span id="answered"></span><span id="of" style="display:none;"> of </span><span id="total"></span></div>
+            <br />
+            Correct: <span id="correct"></span>
+            <br />
+            Incorrect: <span id="incorrect"></span>
+            <br /><br />
+            <button type="button" value="Restart Game">Restart Game</button>
+        </div>
+    </footer>
+</body>
+<script src="scripts/triviagame.js"></script>
+</html>
